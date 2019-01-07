@@ -1,0 +1,363 @@
+@import url(https://fonts.googleapis.com/css?family=Audiowide);
+@import url(http://fonts.googleapis.com/css?family=Roboto);
+
+body {
+  /*background: url(https://orig05.deviantart.net/b5fb/f/2008/239/0/9/old_wood_by_devi8design.jpg); */
+  background-color: white;
+  /*color: #FFF;*/
+  color: black;
+  font-family: "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-size: 16px;
+  line-height: 1;
+    margin: 0 5%;
+
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: black!important;
+}
+
+.background-wrap {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.background {
+  /*background: url('https://orig05.deviantart.net/b5fb/f/2008/239/0/9/old_wood_by_devi8design.jpg'); */
+  background-color: white;
+  background-size: cover;
+  filter: blur(10px);
+  height: 105%;
+  position: relative;
+  width: 105%;
+  right: -2.5%;
+  left: -2.5%;
+  top: -2.5%;
+  bottom: -2.5%;
+}
+
+.loginForm, .modal-content {
+  background: #111;
+  border: 1px solid #191919;
+  border-radius: .4em;
+  bottom: 0;
+  box-shadow: 0 5px 10px 5px rgba(0,0,0,0.2);
+  width: 300px;
+  margin: 10% auto;
+}
+
+.loginForm:after, .modal-content:after {
+  background: linear-gradient(to right, #111111, #444444, #b6b6b8, #444444, #2F2F2F, #272727);
+  content: "";
+  display: block;
+  height: 1px;
+  left: 50px;
+  position: absolute;
+  top: 0;
+  width: 150px;
+}
+
+.loginForm:before, .modal-content:before {
+  border-radius: 50%;
+  box-shadow: 0 0 6px 4px #fff;
+  content: "";
+  display: block;
+  height: 5px;
+  left: 34%;
+  position: absolute;
+  top: -7px;
+  width: 8px;
+}
+
+.inset {
+  border-top: 1px solid #19191a;
+  padding: 20px;
+}
+
+.loginForm h1, .modal-content h5 {
+  font-family: 'Audiowide';
+  border-bottom: 1px solid #000;
+  font-size: 18px;
+  padding: 15px 0;
+  position: relative;
+  text-align: center;
+  text-shadow: 0 1px 0 #000;
+}
+
+.loginForm h1, .modal-content h5 {
+  color: #FFbb00;
+  font-family: Audiowide;
+  font-weight: normal;
+}
+
+.loginForm h1:after, .modal-content h5:after {
+  position: absolute;
+  width: 250px;
+  height: 180px;
+  content: "";
+  display: block;
+  pointer-events: none;
+  top: 0;
+  margin-left: 138px;
+  transform-style: flat;
+  transform: skew(20deg);
+
+  background: -moz-linear-gradient(top, hsla(0,0%,100%,0.1) 0%, hsla(0,0%,100%,0) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,hsla(0,0%,100%,0.2)), color-stop(100%,hsla(0,0%,100%,0)));
+  background: -webkit-linear-gradient(top, hsla(0,0%,100%,0.1) 0%,hsla(0,0%,100%,0) 100%);
+  background: -o-linear-gradient(top, hsla(0,0%,100%,0.1) 0%,hsla(0,0%,100%,0) 100%);
+  background: -ms-linear-gradient(top, hsla(0,0%,100%,0.1) 0%,hsla(0,0%,100%,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#42ffffff', endColorstr='#00ffffff',GradientType=0 );
+  background: linear-gradient(to bottom, hsla(0,0%,100%,0.1) 0%,hsla(0,0%,100%,0) 100%);
+
+}
+
+input[type=text], input[type=password] {
+  background: linear-gradient(#1f2124,#27292c);
+  border: 1px solid #222;
+  border-radius: .3em;
+  box-shadow: 0 1px 0 rgba(255,255,255,0.1);
+  color: #FFF;
+  font-size: 13px;
+  margin-bottom: 20px;
+  padding: 8px 5px;
+  width: 100%;
+}
+
+input[type=text]:disabled, input[type=password]:disabled {
+    color: #999;
+}
+
+/*label[for=remember] {
+  color: #bbb;
+  display: inline-block;
+  height: 20px;
+  line-height: 20px;
+  vertical-align: top;
+  padding: 0 0 0 5px;
+}*/
+
+.p-container {
+  padding: 0 20px 20px;
+  margin-bottom: 10px;
+}
+
+.p-container:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.p-container span {
+  color: #0d93ff;
+  display: block;
+  float: left;
+  padding-top: 8px;
+}
+
+input[type=submit], #btn_add_kework, #btn_add, .btn_add_cat, .btn_add_fn, .btn_add_charge, #show_detail {
+  background: #fc1;
+  border: 1px solid rgba(0,0,0,0.4);
+  border-radius: .3em;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.3), inset 0 10px 10px rgba(255,255,255,0.1);
+  color: #873C00;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: bold;
+  height: 40px;
+  padding: 5px 20px;
+  width: 100%;
+}
+#btn_add_kework, #btn_add, #show_detail {
+  width: auto;
+}
+
+input[type=submit]:hover, #btn_add:hover, input[type=submit]:focus {
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.3), inset 0 -10px 10px rgba(255,255,255,0.1);
+}
+
+input[type=text]:hover:not([disabled]), 
+input[type=text]:focus, 
+input[type=password]:hover:not([disabled]), 
+input[type=password]:focus, 
+label:hover ~ input[type=text], 
+label:hover ~ input[type=password] {
+  background: #27292c;
+}
+
+
+.container .navbar {
+  background: -moz-linear-gradient(top, hsla(0,0%,100%,0.15) 0%, hsla(0,0%,100%,0) 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,hsla(0,0%,100%,0.2)), color-stop(100%,hsla(0,0%,100%,0)));
+  background: -webkit-linear-gradient(top, hsla(0,0%,100%,0.15) 0%,hsla(0,0%,100%,0) 100%);
+  background: -o-linear-gradient(top, hsla(0,0%,100%,0.15) 0%,hsla(0,0%,100%,0) 100%);
+  background: -ms-linear-gradient(top, hsla(0,0%,100%,0.15) 0%,hsla(0,0%,100%,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#42ffffff', endColorstr='#00ffffff',GradientType=0 );
+  background: linear-gradient(to bottom, hsla(0,0%,100%,0.15) 0%,hsla(0,0%,100%,0) 100%);
+  transition: all .5s ease;
+}
+
+.dropdown-menu {
+  background: #111;
+  -webkit-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow:0 0 10px rgba(0, 0, 0, 0.5);
+  box-shadow:0 0 10px rgba(0, 0, 0, 0.5);}
+
+.container .navbar .navbar-collapse .navbar-nav .dropdown-menu .dropdown-item a {
+    list-style-type: none;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+}
+ .container .navbar .navbar-collapse .navbar-nav .dropdown-menu .dropdown-item:hover {
+    background-color: rgb(155, 155, 155, 0.3)!important;
+    transition: all .5s ease;
+    list-style-type: none;
+}
+
+/* START - TABLES STYLE */
+table {
+  background-color: #EEEEEE;
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+table td, table th {
+  border: 1px solid #AAAAAA;
+  padding: 3px 6px;
+}
+
+table tbody td {
+  font-size: 13px;
+}
+table tbody tr.categorie {
+  background: #1a0dab;
+  color: white;
+}
+table tbody tr.charges {
+  background: #676666;
+  color: white;
+}
+table tbody td.fonction {
+  background: maroon;
+  color: white;
+}
+
+.btn_add_cat, .btn_add_fn, .btn_add_charge {
+  color: black;
+  text-decoration: none;
+}
+.btn_add_cat:hover, .btn_add_fn:hover, .btn_add_charge:hover {
+  text-decoration: none;
+}
+
+.btn_add_cat {
+  background: #1a0dab;
+  color: white;
+}
+.btn_add_fn {
+  background: maroon;
+  color: white;
+}
+.btn_add_charge {
+  background: #676666;
+  color: white;
+}
+table thead {
+  background: #1C6EA4;
+  background: -moz-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+  background: -webkit-linear-gradient(top, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+  background: linear-gradient(to bottom, #5592bb 0%, #327cad 66%, #1C6EA4 100%);
+}
+table thead th {
+  font-size: 15px;
+  font-weight: bold;
+  color: black;
+}
+table thead th:first-child {
+  border-left: none;
+}
+
+table.darkTable thead#emtyTH {
+  border: none!important;
+  background: none!important;
+}
+
+table tfoot {
+  font-size: 14px;
+  font-weight: bold;
+  color: black;
+  background: #1F79B7;
+  background: -moz-linear-gradient(top, #FFE803 0%, #FFE803 66%, #FFE803 100%);
+  background: -webkit-linear-gradient(top, #FFE803 0%, #FFE803 66%, #FFE803 100%);
+  background: linear-gradient(to bottom, #FFE803 0%, #FFE803 66%, #FFE803 100%);  
+}
+table.blueTable tfoot td {
+  font-size: 14px;
+}
+table tfoot .links {
+  text-align: right;
+}
+table tfoot .links a{
+  display: inline-block;
+  background: #1C6EA4;
+  color: #FFFFFF;
+  padding: 2px 8px;
+}
+/* END   - TABLES STYLE */
+
+
+
+/* START MODAL STYLE */
+.modal-content {
+  width: 600px;
+  color: white;
+}
+.modal-content form p {
+  color: white;
+}
+.modal-content h4, .modal-content .close {
+  color: white;
+}
+/* #########################################
+   #    override the bootstrap configs     #
+   ######################################### */
+
+
+/* END MODAL STYLE */
+
+/* START DATATABLE STYLE */
+.dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_filter, .dataTables_wrapper .dataTables_info, .dataTables_wrapper .dataTables_processing, .dataTables_wrapper .dataTables_paginate,
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover, .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active {
+  color: black!important;
+}
+/* END DATATABLE STYLE */
+
+.edit {
+  min-width: 100px;
+  width: 100%;
+}
+
+/* START - VALIDATION STYLE */
+/*div.has-error {*/
+  /*color: white!important;*/
+/*}*/
+/* END - VALIDATION STYLE */
+
+
+.modifier_buttons {
+  padding: 5px;
+}
+
+.clientContainer{
+    min-width:100%;
+    width:100%;
+}
+
+#add_historique{
+    margin-left: 160px;
+}

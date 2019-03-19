@@ -25,7 +25,10 @@
             <div class="col-sm-8 col-md-7 py-4">
               <h4 class="text-white">ARTICLES</h4>
               <ul class="list-unstyled">
-                <li><a class="text-white" href="article">Tous les articles</a></li>
+                <li><a class="text-white" href="economie">Economie</a></li>
+                <li><a class="text-white" href="sport">Sport</a></li>
+                <li><a class="text-white" href="culture">Culture</a></li>
+                <li><a class="text-white" href="lifestyle">Lifestyle</a></li>
               </ul>
               </div>
             
@@ -51,6 +54,7 @@
               <h4 class="text-white">Utilisateurs</h4>
               <ul class="list-unstyled">
                 <li><a href="users" class="text-white">Liste des users</a></li>
+                <li><a class="text-white" href="addArticle">Ajouter un article</a></li>
               </ul>
             <?php } ?>
             </div>

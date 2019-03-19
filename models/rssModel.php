@@ -1,4 +1,5 @@
-<?php
+ <?php
+
 function get_rss()
 {
     global $bdd;
@@ -7,3 +8,5 @@ function get_rss()
     $requete->execute();
     return $requete->fetchAll();
 }
+
+    
